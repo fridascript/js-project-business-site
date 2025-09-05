@@ -1,0 +1,125 @@
+/* repsonsive mobile first */
+
+body {
+  background: #ac0d0d;
+  color: #F3F1E6;
+}
+
+/* start of navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar img {
+  width: 50px;
+  margin-left: 10px;
+  justify-items: left;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #F3F1E6;
+  margin-right: 30px;
+}
+
+/* end of navbar */
+
+/*hero image*/
+h1 {
+  font-size: 100px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+}
+
+/*moving link*/
+h3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: 0;
+  color: black;
+  font-size: 15px;
+  white-space: nowrap;
+  transform: translateX(0);
+  animation: move 12s linear infinite alternate-reverse;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(100vw - 100%));
+  }
+}
+
+/*start of menybar*/
+.menybar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.menybild {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: #F3F1E6;
+  border-radius: 50%;
+  text-align: center;
+  color: #ac0d0d;
+  gap: 5px
+}
+
+.menybild .card-image {
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 25%;
+}
+
+/*end of menybar*/
+
+/* responsive tablet and desktop */
+
+@media (min-width: 667px) {
+  body {
+    background: #F3F1E6;
+    color: #CC0606;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #CC0606;
+    margin-right: 30px;
+  }
+
+  .menybar {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    background: #F3F1E6;
+  }
+
+  .menybild .card-image {
+    max-width: 60%;
+  }
+
+  .menybild .card-image:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+  }
+}
