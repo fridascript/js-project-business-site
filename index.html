@@ -11,7 +11,12 @@
 <body>
   <!--navbar-->
   <div class="navbar">
-    <img src="#" alt="logga">
+    <div class="logga">
+      <svg viewBox="0 0 640 512" width="30" title="coffee">
+        <path
+          d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z" />
+      </svg>
+    </div> <!--end-logga-->
     <div class="nav-links">
       <a href="#"> <svg viewBox="0 0 288 512" width="12" title="map-pin">
           <path
@@ -26,31 +31,59 @@
   </div>
   <!--end-navbar-->
 
-  <!--heroimage-->
+  <!--heroimage + moving link-->
   <h1> NO NAME <br> KAFÉ</h1>
-  <h3> artist of the month:
+  <h3> this month's artist:
     <a href="#">artistname</a>
   </h3>
-  <!--menybar-->
+
+  <!--menyn-->
   <section class="container">
     <div class="menybar">
-      <article class="menybild">
-        <img class="card-image" src="coffeecup.png" alt="kaffekopp">
-        <h2> KAFFE </h2>
+
+      <article class="menybubbla">
+        <img class="illustration" src="coffeecup.png" alt="coffee">
+        <h2> COFFEE </h2>
+        <!-- dropdownmenykaffe-->
+        <ul class="dropdown-menu">
+          <li> Espresso 15kr</li>
+          <li> Dubbel 25kr</li>
+          <li> Americano 25kr</li>
+          <li> Latte 35kr</li>
+        </ul>
+        <!--end-dropdownmenykaffe-->
       </article>
 
-      <article class="menybild">
-        <img class="card-image" src="macka.png" alt="macka">
-        <h2> MAT </h2>
+      <article class="menybubbla">
+        <img class="illustration" src="macka.png" alt="food">
+        <h2> FOOD </h2>
+        <ul class="dropdown-menu">
+          <li>no name sandwich 75 kr </li>
+          <li>no name salad 120 kr</li>
+        </ul> <!--end-dropdownmenyfood-->
       </article>
 
-      <article class="menybild">
-        <img class="card-image" src="painting.png" alt="tavla">
-        <h2> HÄNG DIN <br> KONST </h2>
+      <article class="menybubbla">
+        <img class="illustration" src="painting.png" alt="hang your art">
+        <h2> HANG YOUR <br> ART </h2>
+
+        <!--dropdown-form-art-->
+        <form class="dropdown-form">
+          <p> Want to hang your art in our cafe? <br>
+            Fill out your info and we will get back with more information shortly!
+          </p>
+          <label for="instagram">Instagram:</label>
+          <input type="text">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+          <label for="portfolio">Link your portfolio:</label>
+          <input type="url" id="portfolio" name="portfolio">
+          <button type="submit">💌</button>
+        </form> <!--end-dropdown-form-art-->
       </article>
-    </div>
-  </section>
-  <!--end-menybar-->
+    </div> <!--end-menybar-->
+  </section><!--end-container-->
+  <!--end-menyn-->
 </body>
 
 </html>
