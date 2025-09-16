@@ -33,6 +33,8 @@
 
       <!--hamburger-menu will be here -->
 
+      <button class="hamburger">☰</button>
+
       <!--nav-links-->
       <div class="nav-links">
         <a href="#">
@@ -59,7 +61,6 @@
         </a>
       </div>
     </nav>
-
     <!--moving link + hero image-->
     <div class="h3wrapper">
       <h3> this month's artist:
@@ -186,7 +187,14 @@
   </footer>
 
   <!--java-for-hamburger-->
+  <script>
+    const btn = document.querySelector('.hamburger');
+    const links = document.querySelector('.nav-links');
 
+    btn.addEventListener('click', () => {
+      links.classList.toggle('show');
+    });
+  </script>
 </body>
 
 </html>
