@@ -33,6 +33,8 @@
 
     <!--navbar including;
   1.logga - 2.hamburger - 3.navbar-links-->
+
+    <!--logga-->
     <nav class="navbar">
       <div class="logga">
         <img
@@ -42,10 +44,9 @@
       </div>
 
       <!--hamburger-menu-->
-
       <button class="hamburger">☰</button>
 
-      <!--nav-links-->
+      <!--nav bar-links-->
       <div class="nav-links">
         <a href="#">
           <svg
@@ -76,112 +77,111 @@
     </section>
   </header>
 
-  <!--the three menu bubbles-->
-  <main class="container">
-    <section class="menybar">
+  <!--grid container-->
+  <section class="menybar">
 
-      <!--COFFEE-->
-      <article
-        class="menybubbla"
-        tabindex="0"
+    <!--COFFEE-->
+    <article
+      class="menybubbla"
+      tabindex="0"
+    >
+      <img
+        class="illustration"
+        src="coffeecup.png"
+        alt="coffee"
       >
-        <img
-          class="illustration"
-          src="coffeecup.png"
-          alt="coffee"
-        >
 
-        <h2> COFFEE </h2>
+      <h2> COFFEE </h2>
 
-        <!-- dropdownmenu-coffee-->
-        <ul class="dropdown-menu">
-          <li> Espresso 15kr</li>
-          <li> Dubbel 25kr</li>
-          <li> Americano 25kr</li>
-          <li> Latte 35kr</li>
-        </ul>
-      </article>
+      <!-- dropdownmenu-coffee-->
+      <ul class="dropdown-menu">
+        <li> Espresso 15kr</li>
+        <li> Dubbel 25kr</li>
+        <li> Americano 25kr</li>
+        <li> Latte 35kr</li>
+      </ul>
+    </article>
 
-      <!--FOOD-->
-      <article
-        class="menybubbla"
-        tabindex="0"
+    <!--FOOD-->
+    <article
+      class="menybubbla"
+      tabindex="0"
+    >
+      <img
+        class="illustration"
+        src="macka.png"
+        alt="food"
       >
-        <img
-          class="illustration"
-          src="macka.png"
-          alt="food"
-        >
 
-        <h2> FOOD </h2>
-        <!--dropdown-menu-food-->
-        <ul class="dropdown-menu">
-          <li>no name sandwich 75 kr </li>
-          <li>no name salad 120 kr</li>
-        </ul>
-      </article>
+      <h2> FOOD </h2>
+      <!--dropdown-menu-food-->
+      <ul class="dropdown-menu">
+        <li>no name sandwich 75 kr </li>
+        <li>no name salad 120 kr</li>
+      </ul>
+    </article>
 
-      <!--HANG-YOUR-ART-->
-      <article
-        class="menybubbla"
-        tabindex="0"
+    <!--HANG-YOUR-ART-->
+    <article
+      class="menybubbla"
+      tabindex="0"
+    >
+      <img
+        class="illustration"
+        src="painting.png"
+        alt="hang your art"
       >
-        <img
-          class="illustration"
-          src="painting.png"
-          alt="hang your art"
+      <h2> HANG YOUR <br> ART </h2>
+
+      <!--dropdown-form-hang-your-art-->
+      <form
+        class="dropdown-form"
+        action="https://httpbin.org/anything"
+        method="POST"
+      >
+        <p> Want to hang your art in our cafe? <br>
+          Fill out your info and we will get back with more information shortly!
+        </p>
+
+        <label for="instagram">Instagram:</label>
+        <input
+          type="text"
+          name="instagram"
+          id="instagram"
         >
-        <h2> HANG YOUR <br> ART </h2>
 
-        <!--dropdown-form-hang-your-art-->
-        <form
-          class="dropdown-form"
-          action="https://httpbin.org/anything"
-          method="POST"
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
         >
-          <p> Want to hang your art in our cafe? <br>
-            Fill out your info and we will get back with more information shortly!
-          </p>
 
-          <label for="instagram">Instagram:</label>
+        <label for="portfolio">Link your portfolio:</label>
+        <input
+          type="url"
+          id="portfolio"
+          name="portfolio"
+        >
+
+        <label
+          for="radio-button"
+          class="consent"
+        >
           <input
-            type="text"
-            name="instagram"
-            id="instagram"
+            type="radio"
+            id="radio-button"
+            name="consent"
           >
-
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-          >
-
-          <label for="portfolio">Link your portfolio:</label>
-          <input
-            type="url"
-            id="portfolio"
-            name="portfolio"
-          >
-
-          <label
-            for="radio-button"
-            class="consent"
-          >
-            <input
-              type="radio"
-              id="radio-button"
-              name="consent"
-            >
-            I agree to the use of my information.
-          </label>
+          I agree to the use of my information.
+        </label>
 
 
-          <button type="submit">💌</button>
-        </form>
-      </article>
-    </section> <!--end-menybar-->
-  </main> <!--end-container-->
+        <button type="submit">💌</button>
+      </form>
+    </article>
+  </section>
+  <!--end-grid-container-menybar-->
 
 
   <footer>
