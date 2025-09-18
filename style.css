@@ -30,7 +30,6 @@ video {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  overflow: hidden;
 }
 
 /*logga*/
@@ -76,37 +75,6 @@ h1 {
   margin-bottom: 100px;
 }
 
-/*moving link*/
-.h3wrapper {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-h3 {
-  position: absolute;
-  top: 15%;
-  left: 0;
-  margin: 0;
-  color: black;
-  font-size: 15px;
-  white-space: nowrap;
-  transform: translateX(0);
-  animation: move 15s linear infinite alternate-reverse;
-  color: #F3F1E6;
-}
-
-@keyframes move {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(calc(100vw - 100%));
-  }
-}
-
-/*end of moving link*/
-
 /*start of menybar*/
 .menybar {
   display: grid;
@@ -127,14 +95,12 @@ h3 {
   border-radius: 50%;
   background: #F3F1E6;
   color: #ac0d0d;
-  text-align: center;
   cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  outline: none;
+  transition: transform 0.4s ease, box-shadow 2.4s ease;
 }
 
 .menybubbla:last-child {
-  margin-bottom: 380px;
+  margin-bottom: 390px;
 }
 
 .menybubbla:focus-within .dropdown-menu {
@@ -159,6 +125,7 @@ h2 {
   display: inline-block;
   cursor: pointer;
   font-size: 20px;
+  text-align: center;
 }
 
 /*start dropdown menu styling*/
@@ -193,6 +160,7 @@ h2 {
 .dropdown-form {
   display: block;
   position: absolute;
+  text-align: center;
   top: 100%;
   left: 50%;
   transform: translateX(-50%) scale(0.95);
@@ -257,10 +225,11 @@ h2 {
 
 footer {
   background: #F3F1E6;
-  opacity: 80%;
+  opacity: 50%;
   color: #CC0606;
   text-align: center;
-  max-width: 100%;
+  max-width: auto;
+  margin-bottom: 0px;
 }
 
 
@@ -269,7 +238,6 @@ footer {
   body {
     background: #F3F1E6;
     color: #CC0606;
-    height: 100%;
   }
 
   /*hamburger-menu*/
@@ -296,10 +264,6 @@ footer {
     margin-left: 30px;
   }
 
-  h3 {
-    color: #ac0d0d;
-  }
-
   .menybar {
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     margin: 200px 0px 200px 0px;
@@ -307,7 +271,6 @@ footer {
   }
 
   .menybubbla {
-    min-width: unset;
     width: 80%;
     height: 100%;
     border: 2px solid #ac0d0d;
@@ -360,12 +323,12 @@ footer {
 
   }
 
-
   .menybubbla:last-child {
     margin-bottom: 50px;
   }
 
   footer {
+    margin-bottom: none;
     background: #CC0606;
     opacity: 70%;
     color: #F3F1E6;
