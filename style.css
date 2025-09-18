@@ -28,8 +28,8 @@ video {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 10px;
+  justify-content: space-between;
 }
 
 /*logga*/
@@ -53,9 +53,9 @@ video {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 30px;
   padding: 5px;
-  background: rgba(248, 241, 241, 0.8);
+  background: rgba(248, 241, 241, 0.9);
   border-radius: 5px;
   width: 20vw;
 
@@ -64,7 +64,6 @@ video {
 .nav-links.show {
   display: flex;
 }
-
 
 /* end of navbar */
 
